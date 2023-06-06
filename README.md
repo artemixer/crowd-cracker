@@ -5,11 +5,11 @@ CrowdCracker is an offensive tool meant for enumerating and attacking vulnerable
 It operates in 3 stages:
 
 1.  Using WPScan it enumerates the possible usernames for the login form
-2.  Then, it makes a call to DeHashed.com for these usernames to check for exising password leaks
+2.  Then, it makes a call to DeHashed.com for these usernames to check for exising password leaks. 
     It then takes the passwords from DeHashed and applies rules to them to create more password variations
 3. Finally, it uses the created password dictionary to bruteforce the login form
 
-Crowdcracker supports using proxies, custom rulesets and allows the user to specify the number of threads to use
+CrowdCracker supports using proxies, custom rulesets and allows the user to specify the number of threads to use
 ```
 Usage:  
     Example: crowdCracker.py --url "https://example.com" --threads 50 --users-enum 10 --ruleset-size 2 
